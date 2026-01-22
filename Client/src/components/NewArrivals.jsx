@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const products = [
     {
         id: 1,
         name: 'Classic Striped Shirt',
-        brand: 'Uniqlo',
+        brand: 'Product',
         price: 40.00,
         image: 'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         stock: true
@@ -13,7 +14,7 @@ const products = [
     {
         id: 2,
         name: 'Elegance White Dress',
-        brand: 'Uniqlo',
+        brand: 'Product',
         price: 40.00,
         image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         stock: true
@@ -21,7 +22,7 @@ const products = [
     {
         id: 3,
         name: '4 Button Blazer',
-        brand: 'Uniqlo',
+        brand: 'Product',
         price: 40.00,
         image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         stock: true
@@ -29,7 +30,7 @@ const products = [
     {
         id: 4,
         name: 'Varsity Jacket',
-        brand: 'Uniqlo',
+        brand: 'Product',
         price: 40.00,
         image: 'https://images.unsplash.com/photo-1550614000-4b9519e02a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         stock: true
@@ -37,6 +38,8 @@ const products = [
 ];
 
 const NewArrivals = () => {
+    const navigate = useNavigate();
+
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,7 +56,11 @@ const NewArrivals = () => {
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
                 >
                     {products.map((product) => (
-                        <div key={product.id} className="group cursor-pointer">
+                        <div
+                            key={product.id}
+                            onClick={() => navigate('/product')}
+                            className="group cursor-pointer"
+                        >
                             <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/5] mb-4">
                                 <motion.img
                                     whileHover={{ scale: 1.05 }}
@@ -77,7 +84,7 @@ const NewArrivals = () => {
                                     <h3 className="text-lg font-semibold text-slate-800 group-hover:text-teal-600 transition-colors">{product.name}</h3>
                                 </div>
                                 <div className="text-right">
-                                    <p className="text-lg font-bold text-slate-900">${product.price.toFixed(2)}</p>
+                                    <p className="text-lg font-bold text-slate-900">₹{product.price.toFixed(2)}</p>
                                     {product.stock && <p className="text-xs text-teal-600 font-medium">Stock Available</p>}
                                 </div>
                             </div>

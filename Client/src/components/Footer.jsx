@@ -17,7 +17,7 @@ const Footer = () => {
                                 <HelpCircle className="w-6 h-6 text-teal-500 group-hover:scale-110 transition-transform" />
                                 <div>
                                     <p className="text-xs text-slate-400">Help Center</p>
-                                    <p className="text-sm font-bold text-slate-700 group-hover:text-teal-600 transition-colors">help.stella.com</p>
+                                    <p className="text-sm font-bold text-slate-700 group-hover:text-teal-600 transition-colors">help.UrbanWeave.com</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-3 group cursor-pointer">
@@ -31,7 +31,7 @@ const Footer = () => {
                                 <Mail className="w-6 h-6 text-teal-500 group-hover:scale-110 transition-transform" />
                                 <div>
                                     <p className="text-xs text-slate-400">Email Support</p>
-                                    <p className="text-sm font-bold text-slate-700 group-hover:text-teal-600 transition-colors">online@stella.com</p>
+                                    <p className="text-sm font-bold text-slate-700 group-hover:text-teal-600 transition-colors">online@UrbanWeave.com</p>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                         <div className="lg:col-span-2">
                             <div className="flex items-center gap-2 cursor-pointer mb-6">
                                 <span className="text-2xl font-bold tracking-tighter text-teal-500">
-                                    <span className="font-serif italic text-3xl">S</span>stella
+                                    <span className="font-serif italic text-3xl">U</span>UrbanWeave
                                 </span>
                             </div>
                             <p className="text-slate-500 text-sm mb-8 leading-relaxed max-w-xs">
@@ -115,7 +115,7 @@ const Footer = () => {
                             <span className="p-2 bg-gray-100 rounded-full hover:bg-teal-50 hover:text-teal-500 cursor-pointer transition-colors"><Linkedin className="w-4 h-4" /></span>
                         </div>
                         <div className="text-slate-400 text-xs text-center md:text-right">
-                            <p>&copy; 2026 Stella E-Commerce. All rights reserved.</p>
+                            <p>&copy; 2026 UrbanWeave E-Commerce. All rights reserved.</p>
                         </div>
                         <div className="flex gap-6 text-xs text-slate-500">
                             <a href="#" className="hover:text-slate-800">Privacy Policy</a>

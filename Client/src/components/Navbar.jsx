@@ -10,7 +10,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
                         <span className="text-2xl font-bold tracking-tighter text-teal-500">
-                            <span className="font-serif italic text-3xl">S</span>tella
+                            <span className="font-serif italic text-3xl">U</span>rbanWeave
                         </span>
                     </div>
 

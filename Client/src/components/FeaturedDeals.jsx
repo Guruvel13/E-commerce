@@ -19,7 +19,7 @@ const FeaturedDeals = () => {
                     >
                         <div className="p-10 w-1/2 z-10 flex flex-col justify-center">
                             <h3 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
-                                <span className="font-serif italic text-3xl">S</span>stella
+                                <span className="font-serif italic text-3xl">U</span>UrbanWeave
                             </h3>
                             <h2 className="text-3xl font-bold text-white mb-6">Indulge in exclusive deals</h2>
                             <p className="text-blue-100 mb-8 text-sm leading-relaxed">Shop now and enjoy our latest fashion finds.</p>
