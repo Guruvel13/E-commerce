@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const slides = [
     {
@@ -39,6 +40,7 @@ const slides = [
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -51,7 +53,7 @@ const Hero = () => {
     return (
         <section className="w-full bg-white pt-6 pb-4">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="relative w-full h-[80vh] bg-gray-100 rounded-3xl overflow-hidden flex items-center justify-center">
+                <div className="relative w-full h-[70vh] bg-gray-100 rounded-3xl overflow-hidden flex items-center justify-center">
                     {/* Background Image Slider */}
                     <div className="absolute inset-0 z-0">
                         <AnimatePresence mode="wait">
@@ -63,10 +65,11 @@ const Hero = () => {
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 1.5 }}
-                                className="w-full h-full object-cover object-center opacity-90 absolute inset-0"
+                                onClick={() => navigate('/product')}
+                                className="w-full h-full object-cover object-center opacity-90 absolute inset-0 cursor-pointer"
                             />
                         </AnimatePresence>
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/20 to-transparent mix-blend-multiply"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/20 to-transparent mix-blend-multiply pointer-events-none"></div>
                     </div>
 
                     {/* Content */}

@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const ExclusiveCollection = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,6 +50,7 @@ const ExclusiveCollection = () => {
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
+                                    onClick={() => navigate('/product')}
                                     className="px-6 py-2 bg-teal-400 text-white font-semibold rounded-lg hover:bg-teal-500 transition-colors shadow-lg shadow-teal-200"
                                 >
                                     Shop Now
@@ -69,6 +72,7 @@ const ExclusiveCollection = () => {
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
+                                    onClick={() => navigate('/product')}
                                     className="px-6 py-2 bg-teal-400 text-white font-semibold rounded-lg hover:bg-teal-500 transition-colors shadow-lg shadow-teal-200"
                                 >
                                     Shop Now

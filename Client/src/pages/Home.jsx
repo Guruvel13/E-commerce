@@ -20,10 +20,10 @@ const Home = () => {
                 <div className="space-y-0">
                     <Hero />
                     <Categories />
+                    <BrandLogos />
                     <NewArrivals />
                     <ExclusiveCollection />
                     <FeaturedDeals />
-                    <BrandLogos />
                     <RecentPosts />
                 </div>
             </main>

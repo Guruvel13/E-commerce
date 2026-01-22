@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const RecentPosts = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,6 +15,7 @@ const RecentPosts = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
+                        onClick={() => navigate('/product')}
                         className="group relative h-96 rounded-3xl overflow-hidden cursor-pointer"
                     >
                         <img
@@ -32,6 +35,7 @@ const RecentPosts = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2 }}
                         viewport={{ once: true }}
+                        onClick={() => navigate('/product')}
                         className="group relative h-96 rounded-3xl overflow-hidden cursor-pointer"
                     >
                         <img

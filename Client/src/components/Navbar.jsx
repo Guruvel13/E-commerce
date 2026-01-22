@@ -1,6 +1,7 @@
 import React from 'react';
-import { Search, ShoppingCart, Heart, Globe, User, Menu } from 'lucide-react';
+import { Search, ShoppingCart, Heart, Globe, Search as SearchIcon, Menu } from 'lucide-react'; // Fixed imports if needed or just keep existing
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -9,9 +10,9 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
-                        <span className="text-2xl font-bold tracking-tighter text-teal-500">
+                        <Link to="/" className="text-2xl font-bold tracking-tighter text-teal-500">
                             <span className="font-serif italic text-3xl">U</span>rbanWeave
-                        </span>
+                        </Link>
                     </div>
 
                     {/* Search Bar - Hidden on mobile */}

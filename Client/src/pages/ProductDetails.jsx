@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Minus, Plus, Heart, Share2, ChevronDown, ChevronRight, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ProductDetails = () => {
+    // ... (state lines 9-11)
     const [quantity, setQuantity] = useState(1);
     const [selectedColor, setSelectedColor] = useState('gray');
     const [selectedImage, setSelectedImage] = useState(0);
@@ -67,7 +68,7 @@ const ProductDetails = () => {
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {/* Breadcrumbs */}
                 <nav className="flex items-center text-xs text-slate-500 mb-8 uppercase tracking-wide font-medium relative z-10">
-                    <a href="/" className="hover:text-teal-600 transition-colors">Main</a>
+                    <Link to="/" className="hover:text-teal-600 transition-colors">Main</Link>
                     <ChevronRight className="w-3 h-3 mx-2" />
                     <span>Shop</span>
                     <ChevronRight className="w-3 h-3 mx-2" />

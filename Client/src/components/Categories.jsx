@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Watch, Shirt, ShoppingBag, Footprints, Droplets, Briefcase } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const container = {
     hidden: { opacity: 0 },
@@ -29,14 +30,19 @@ const categories = [
 ];
 
 const Categories = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Left Side: Header and Link */}
-                    <div className="lg:w-1/5 flex flex-row lg:flex-col justify-between items-center lg:items-start mb-6 lg:mb-0">
-                        <h2 className="text-3xl font-bold text-slate-800 tracking-tight">Shop by Category</h2>
-                        <a href="#" className="text-teal-500 font-medium hover:text-teal-700 transition-colors">See all</a>
+                    <div className="lg:w-1/5 flex flex-row lg:flex-col justify-between items-start mb-6 lg:mb-0">
+                        <div>
+                            <h2 className="text-3xl font-bold text-slate-800 tracking-tight leading-tight">
+                                Shop by <br className="hidden lg:block" /> Category
+                            </h2>
+                            <button onClick={() => navigate('/product')} className="mt-6 text-teal-500 font-medium hover:text-teal-700 transition-colors bg-transparent border-none cursor-pointer p-0 block">See all</button>
+                        </div>
                     </div>
 
                     {/* Right Side: Grid */}
@@ -52,9 +58,10 @@ const Categories = () => {
                                 variants={item}
                                 key={category.name}
                                 whileHover={{ y: -5, boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)' }}
-                                className="flex items-center gap-3 p-3 rounded-2xl border border-gray-100 bg-white hover:border-teal-100 transition-all cursor-pointer group"
+                                onClick={() => navigate('/product')}
+                                className="flex items-center gap-4 p-3 rounded-[2rem] border border-gray-200 bg-white hover:border-teal-100 hover:shadow-md transition-all cursor-pointer group"
                             >
-                                <div className={`p-2.5 rounded-xl ${category.bg} ${category.color} group-hover:scale-110 transition-transform duration-300`}>
+                                <div className={`p-3 rounded-2xl ${category.bg} ${category.color} group-hover:scale-110 transition-transform duration-300`}>
                                     <category.icon className="w-5 h-5" />
                                 </div>
                                 <span className="font-semibold text-sm text-slate-700 group-hover:text-slate-900 whitespace-nowrap">{category.name}</span>

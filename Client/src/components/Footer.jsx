@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, HelpCircle, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -47,9 +48,9 @@ const Footer = () => {
                         {/* Brand & App Column */}
                         <div className="lg:col-span-2">
                             <div className="flex items-center gap-2 cursor-pointer mb-6">
-                                <span className="text-2xl font-bold tracking-tighter text-teal-500">
-                                    <span className="font-serif italic text-3xl">U</span>UrbanWeave
-                                </span>
+                                <Link to="/" className="text-2xl font-bold tracking-tighter text-teal-500">
+                                    <span className="font-serif italic text-3xl">U</span>rbanWeave
+                                </Link>
                             </div>
                             <p className="text-slate-500 text-sm mb-8 leading-relaxed max-w-xs">
                                 Your premium destination for fashion, style, and elegance. Shop the latest trends with ease.

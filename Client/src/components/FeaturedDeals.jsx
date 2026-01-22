@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const FeaturedDeals = () => {
+    const navigate = useNavigate();
     return (
         <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,6 +27,7 @@ const FeaturedDeals = () => {
                             <p className="text-blue-100 mb-8 text-sm leading-relaxed">Shop now and enjoy our latest fashion finds.</p>
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
+                                onClick={() => navigate('/product')}
                                 className="w-fit px-6 py-3 bg-teal-400 text-white font-semibold rounded-lg hover:bg-teal-500 transition-colors"
                             >
                                 Shop Now
@@ -65,6 +68,7 @@ const FeaturedDeals = () => {
                             <p className="text-cyan-50 mb-8 text-sm leading-relaxed">Enjoy a special discount on your first purchase.</p>
                             <motion.button
                                 whileHover={{ scale: 1.05 }}
+                                onClick={() => navigate('/product')}
                                 className="w-fit px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors"
                             >
                                 Get discount
