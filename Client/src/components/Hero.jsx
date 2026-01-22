@@ -133,16 +133,6 @@ const Hero = () => {
                                 </div>
                             </div>
 
-                            {/* Center Arrow */}
-                            <motion.div
-                                animate={{ y: [0, 10, 0] }}
-                                transition={{ repeat: Infinity, duration: 2 }}
-                                className="absolute left-1/2 transform -translate-x-1/2 bottom-0 hidden md:block"
-                            >
-                                <div className="h-12 w-12 rounded-full border border-white/30 flex items-center justify-center backdrop-blur-sm cursor-pointer hover:bg-white/10 transition-colors">
-                                    <ArrowDown className="text-white h-6 w-6" />
-                                </div>
-                            </motion.div>
                         </div>
                     </div>
                 </div>

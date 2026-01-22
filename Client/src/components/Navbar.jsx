@@ -32,17 +32,21 @@ const Navbar = () => {
                     {/* Right Icons */}
                     <div className="flex items-center space-x-6">
                         <motion.div whileHover={{ scale: 1.1 }} className="relative cursor-pointer group">
-                            <ShoppingCart className="h-6 w-6 text-slate-600 group-hover:text-teal-600 transition-colors" />
-                            <span className="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-                                20
-                            </span>
+                            <Link to="/cart">
+                                <ShoppingCart className="h-6 w-6 text-slate-600 group-hover:text-teal-600 transition-colors" />
+                                <span className="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                                    20
+                                </span>
+                            </Link>
                         </motion.div>
 
                         <motion.div whileHover={{ scale: 1.1 }} className="relative cursor-pointer group">
-                            <Heart className="h-6 w-6 text-slate-600 group-hover:text-rose-500 transition-colors" />
-                            <span className="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-                                3
-                            </span>
+                            <Link to="/wishlist">
+                                <Heart className="h-6 w-6 text-slate-600 group-hover:text-rose-500 transition-colors" />
+                                <span className="absolute -top-2 -right-2 bg-rose-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                                    3
+                                </span>
+                            </Link>
                         </motion.div>
 
                         <div className="hidden lg:flex items-center space-x-1 cursor-pointer hover:text-teal-600 transition-colors">

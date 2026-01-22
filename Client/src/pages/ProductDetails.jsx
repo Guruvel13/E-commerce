@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Star, Minus, Plus, Heart, Share2, ChevronDown, ChevronRight, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const ProductDetails = () => {
-    // ... (state lines 9-11)
+    const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const [selectedColor, setSelectedColor] = useState('gray');
     const [selectedImage, setSelectedImage] = useState(0);
@@ -186,9 +186,11 @@ const ProductDetails = () => {
                             </div>
 
                             {/* Add to Cart */}
+                            {/* Add to Cart */}
                             <motion.button
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
+                                onClick={() => navigate('/cart')}
                                 className="flex-1 bg-slate-900 text-white font-bold py-3.5 rounded-xl hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200"
                             >
                                 Add to cart
