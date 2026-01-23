@@ -38,7 +38,7 @@ const BrandLogos = () => {
 
     return (
         <section className="py-16 bg-white overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-10">
                 <div className="flex justify-between items-end">
                     <h2 className="text-xl font-bold text-slate-800">Shop by Brands</h2>
                     <span onClick={() => navigate('/product')} className="text-teal-500 text-sm font-medium hover:text-teal-700 transition-colors cursor-pointer">See All</span>

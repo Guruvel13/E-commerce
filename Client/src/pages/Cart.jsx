@@ -83,10 +83,10 @@ const Cart = () => {
         <div className="min-h-screen bg-white font-sans">
             <Navbar />
 
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 {/* Step Indicator */}
                 <div className="flex flex-col lg:flex-row gap-6 items-start">
-                    {/* Vertical Side Stepper */}
+                    {/* Vertical Side Stepper */}   
                     <div className="hidden lg:flex flex-col items-center gap-1 pt-2 mr-4 sticky top-24">
                         <div className="flex flex-col items-center gap-1">
                             <div className="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold shadow-lg shadow-slate-200 z-10">1</div>

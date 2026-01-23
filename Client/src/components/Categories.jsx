@@ -33,7 +33,7 @@ const Categories = () => {
     const navigate = useNavigate();
     return (
         <section className="py-16 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Left Side: Header and Link */}
                     <div className="lg:w-1/5 flex flex-row lg:flex-col justify-between items-start mb-6 lg:mb-0">

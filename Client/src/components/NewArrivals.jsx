@@ -42,7 +42,7 @@ const NewArrivals = () => {
 
     return (
         <section className="py-16 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-end mb-10">
                     <h2 className="text-3xl font-bold text-slate-800 tracking-tight">New Arrivals</h2>
                     <a href="#" className="text-teal-500 font-medium hover:text-teal-700 transition-colors">See All</a>

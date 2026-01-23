@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="mt-20">
             {/* Help Section */}
             <div className="bg-slate-50 border-b border-gray-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                         <div className="flex flex-col items-center md:items-start text-center md:text-left">
                             <h3 className="text-xl font-bold text-slate-800 mb-1">We're always here to help</h3>
@@ -42,7 +42,7 @@ const Footer = () => {
 
             {/* Main Footer Links */}
             <div className="bg-white pt-16 pb-8">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
 
                         {/* Brand & App Column */}

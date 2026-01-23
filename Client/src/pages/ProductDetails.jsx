@@ -65,7 +65,7 @@ const ProductDetails = () => {
         <div className="min-h-screen bg-white">
             <Navbar />
 
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <main className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {/* Breadcrumbs */}
                 <nav className="flex items-center text-xs text-slate-500 mb-8 uppercase tracking-wide font-medium relative z-10">
                     <Link to="/" className="hover:text-teal-600 transition-colors">Main</Link>

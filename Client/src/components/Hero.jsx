@@ -52,7 +52,7 @@ const Hero = () => {
 
     return (
         <section className="w-full bg-white pt-6 pb-4">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="relative w-full h-[70vh] bg-gray-100 rounded-3xl overflow-hidden flex items-center justify-center">
                     {/* Background Image Slider */}
                     <div className="absolute inset-0 z-0">

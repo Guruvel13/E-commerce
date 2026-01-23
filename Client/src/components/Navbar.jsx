@@ -25,7 +25,7 @@ const Navbar = () => {
 
     return (
         <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
@@ -152,10 +152,7 @@ const Navbar = () => {
                             </Link>
                         </motion.div>
 
-                        <div className="hidden lg:flex items-center space-x-1 cursor-pointer hover:text-teal-600 transition-colors">
-                            <Globe className="h-5 w-5 text-slate-600" />
-                            <span className="text-sm font-medium text-slate-700">English</span>
-                        </div>
+
 
                         <Link to="/profile" className="flex items-center gap-2 cursor-pointer pl-4 border-l border-gray-200 group">
                             <div className="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden border border-transparent group-hover:border-teal-500 transition-all">

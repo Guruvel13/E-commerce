@@ -38,7 +38,7 @@ const SearchResults = () => {
         <div className="min-h-screen bg-white font-sans">
             <Navbar />
 
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <main className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <header className="mb-12">
                     <h1 className="text-3xl font-bold text-slate-900 mb-2">
                         {results.length > 0 ? `Search results for "${query}"` : `No results found for "${query}"`}
